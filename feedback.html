@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- Description: Explore Japan -->
+<!-- Authors: Stanton, Grace, Bryan & Bosco -->
+<!-- Date: 4/12/2024 -->
+<!-- Validated: Ok 4/12/2024 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Stanton Choo,Bryan Ngu,Bosco Chieng,Grace Vannesa">
+    <meta name="description" content="Explore Japan">
+    <meta name="keywords" content="Japan, Explore, Places">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Feedback</title>
+</head>
+
+ <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html#home"><img src="images/logo.png" alt="Explore Japan Logo" class="logo-img"></a>
+            </div>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#content" class="dropdown-link">Content</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#intro">Overview</a></li>
+                            <li><a href="historyofjapan.html">History</a></li>
+                            <li><a href="festivals.html">Festivals</a></li>
+                            <li><a href="art.html">Arts and Crafts</a></li>
+                            <li><a href="traditions.html">Traditions</a></li>
+                            <li><a href="food.html">Food</a></li>
+							<li><a href="charms.html">Charms</a></li>
+							<li><a href="costumes.html">Costumes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<body>
+    <hr>
+    <h1 class="feedbackhi">Feedback Form</h1>
+    <hr>
+
+    <div class="containerfeedbck">
+        <form name="feedback" method="post" action="mailto:miaoidk82@gmail.com" enctype="text/plain"> 
+            <p>We value your feedback! Please leave them down below.</p>
+            <br>
+            
+            <fieldset class="fdbckfs">  
+                <!-- Name Input -->
+                <div class="formGroup">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="Enter your full name" size="40" id="name" required>
+                </div>
+                <br> 
+                
+                <!-- Gender Selection -->
+                <div class="formGroup">        
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="male" id="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="prefer not to say" id="preferNotToSay" required>
+                    <label for="preferNotToSay">Prefer not to say</label>
+                </div>   
+                <br>           
+
+                <!-- Email Input -->
+                <div class="formGroup">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <br> 
+
+                <!-- Feedback Type Selection -->
+                <div class="formGroup">
+                    <label>Feedback Type:</label>
+                    <input type="radio" name="feedbackType" value="Comment" id="comment" required>
+                    <label for="comment">Comment</label>
+                    <input type="radio" name="feedbackType" value="suggestion" id="suggestion" required>
+                    <label for="suggestion">Suggestion</label>
+                    <input type="radio" name="feedbackType" value="question" id="question" required>
+                    <label for="question">Question</label>
+                </div>
+                <br> 
+                
+                <!-- Feedback Textarea -->
+                <div class="formGroup">
+                    <label for="feedback">Feedback:</label>
+                    <textarea name="feedback" rows="5" cols="50" placeholder="Write your feedback here" id="feedback"></textarea>
+                </div>
+                <br> 
+
+                <!-- Rating Section -->
+                <div class="formGroup">
+                    <p><label type="rating">Rating:</label></p>
+                    <div class="rating">
+                        <input type="radio" name="rating" id="star1" value="1" required>
+                        <label for="star1">&#9733;</label>
+                        <input type="radio" name="rating" id="star2" value="2" required>
+                        <label for="star2">&#9733;</label>
+                        <input type="radio" name="rating" id="star3" value="3" required>
+                        <label for="star3">&#9733;</label>
+                        <input type="radio" name="rating" id="star4" value="4" required>
+                        <label for="star4">&#9733;</label>
+                        <input type="radio" name="rating" id="star5" value="5" required>
+                        <label for="star5">&#9733;</label>
+                    </div>
+                </div>
+                <br>
+
+                <!-- How did you hear about us -->
+                <div class="formGroup">
+                    <label for="howDidYouHear">How did you hear about us?</label>
+                    <select name="howDidYouHear" id="howDidYouHear">
+                        <option value="internet">Internet</option>
+                        <option value="friend">Friend</option>
+                        <option value="advertisement">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <br>
+                
+                <!-- Content clarity feedback -->
+                <div class="formGroup">
+                    <label>Was the content clear and helpful?</label>
+                    <input type="radio" name="contentClear" value="yes" id="contentYes" required>
+                    <label for="contentYes">Yes</label>
+                    <input type="radio" name="contentClear" value="no" id="contentNo" required>
+                    <label for="contentNo">No</label>
+                </div>
+                <br>
+
+                <!-- Additional comments -->
+                <div class="formGroup">
+                    <label for="additionalComments">Any additional comments or suggestions?</label>
+                    <textarea name="additionalComments" rows="4" cols="50" placeholder="Your comments..." id="additionalComments"></textarea>
+                </div>
+                <br>
+                
+                <!-- Recommendation Feedback -->
+                <div class="formGroup">
+                    <label>Would you recommend our informative website to others?</label>
+                    <input type="radio" name="recommend" value="yes" id="recommendYes" required>
+                    <label for="recommendYes">Yes</label>
+                    <input type="radio" name="recommend" value="no" id="recommendNo" required>
+                    <label for="recommendNo">No</label>
+                </div>
+                <br>
+
+                <!-- Submit and Reset Buttons -->
+                <div class="button">    
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>                
+                </div>
+            </fieldset>
+        </form>
+    </div>
+	<footer>
+	<a href="BBGS.html">© BBGS | Last updated: December 4, 2024</a>
+	</footer>
+</body>
+</html>
