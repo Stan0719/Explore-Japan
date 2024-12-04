@@ -542,11 +542,11 @@ input[type="name"],
 input[type="text"],
 input[type="email"],
 textarea {
-			width: 100%;
-			padding: 10px;
-			margin-bottom: 15px;
-			border: 1px solid #ccc;
-			border-radius: 5px;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 }
 
 input[type="radio"] {
@@ -609,8 +609,6 @@ button[type="reset"] {
             color: white;
 }
 
-button[type="submit"]:hover,
-button[type="reset"]:hover 
 
 
 /*gallery style*/
